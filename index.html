@@ -24,9 +24,17 @@
           <a href="/" target="_self" class="logo-webstudio"
             >Web<span class="accent">Studio</span></a
           >
+
+          <!-- burger -->
+          <button class="burger-btn active" type="button">
+            <svg class="burger-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+
           <ul class="header-nav-ul">
             <li><a href="./index.html" class="nav-link active">Studio</a></li>
-            <li><a href="" class="nav-link">Portfolio</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
             <li><a href="" class="nav-link">Contacts</a></li>
           </ul>
         </nav>
@@ -45,13 +53,6 @@
             </li>
           </ul>
         </address>
-
-        <!-- burger -->
-        <button class="burger-btn" type="button">
-          <svg class="burger-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-burger"></use>
-          </svg>
-        </button>
       </div>
     </header>
 
@@ -452,7 +453,7 @@
         </div>
       </section>
 
-      <section class="section-four section">
+      <section id="portfolio" class="section-four section">
         <div class="portfolio-wrapper container">
           <h2 class="heading-two">Our Portfolio</h2>
 
@@ -712,7 +713,87 @@
         </div>
       </div>
     </footer>
+    <!-- MOBILE MENU -->
+    <div class="overlay-menu-container is-open">
+      <div class="mobile-menu-container">
+        <button class="mobile-menu-close-btn" type="button">
+          <svg class="mobile-menu-close-btn-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
 
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="mobile-menu-item"><a href="">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <div class="menu-contacts-container">
+          <ul class="menu-contacts-ul">
+            <li>
+              <a class="menu-contacts menu-tel" href="tel:+110001111111">
+                +11 (000) 111-11-11
+              </a>
+            </li>
+            <li>
+              <a class="menu-contacts" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-socials-wrapper">
+          <ul class="ul-socials-menu">
+            <li class="li-socials-menu">
+              <a class="socials-link-menu" href="">
+                <svg class="svg-icon-menu" width="16" height="16">
+                  <use
+                    class="icons-socials-menu"
+                    href="./images/icons.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="li-socials-menu">
+              <a class="socials-link-menu" href="">
+                <svg class="svg-icon-menu" width="16" height="16">
+                  <use
+                    class="icons-socials-menu"
+                    href="./images/icons.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="li-socials-menu">
+              <a class="socials-link-menu" href="">
+                <svg class="svg-icon-menu" width="16" height="16">
+                  <use
+                    class="icons-socials-menu"
+                    href="./images/icons.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="li-socials-menu">
+              <a class="socials-link-menu" href="">
+                <svg class="svg-icon-menu" width="16" height="16">
+                  <use
+                    class="icons-socials-menu"
+                    href="./images/icons.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- BACKDROP -->
     <div class="backdrop is-open">
       <div class="modal">
         <button class="close-button" type="button">
