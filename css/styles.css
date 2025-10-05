@@ -490,7 +490,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("./images/bg-img.jpg");
+    url("./images/bg-img/bg-img.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -501,7 +501,7 @@ img {
 
 @media (min-resolution: 192dpi) {
   .section-one {
-    background-image: url("./images/bg-img@2x.jpg");
+    background-image: url("./images/bg-img/bg-img@2x.jpg");
   }
 }
 
