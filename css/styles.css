@@ -120,12 +120,15 @@ img {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-/* 
+
 .header-nav {
-  margin-right: auto;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-} */
+  flex-grow: 1;
+}
+
 .header-container {
   display: flex;
   /* align-items: center; */
@@ -143,6 +146,7 @@ img {
     /* margin-right: auto; */
     display: flex;
     align-items: center;
+    flex-grow: 0;
   }
 }
 
@@ -160,6 +164,7 @@ img {
 
 .logo-webstudio {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   padding: 16px 0;
 
@@ -306,6 +311,7 @@ img {
     padding: 0;
     line-height: 0;
     display: flex;
+    justify-content: space-between;
 
     /* position: relative;
     overflow: hidden;
@@ -319,11 +325,11 @@ img {
 
   .overlay-menu-container {
     background-color: #fff;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 99999;
     transform: translateX(100%);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -336,12 +342,11 @@ img {
   } */
 
   .burger-btn:hover .overlay-menu-container {
-    transform: translateY(0%);
+    transform: translateX(0%);
     cursor: pointer;
   }
 
   .mobile-menu-container {
-    /* position: relative; */
     height: 100%;
   }
 
@@ -371,6 +376,14 @@ img {
     margin-left: 16px;
   }
 
+  .mobile-menu-nav a {
+    color: #2e2f42;
+  }
+
+  /* .mobile-menu-item > .ocean-link {
+    color: #404bbf;
+  } */
+
   .mobile-menu-list {
     display: flex;
     flex-direction: column;
@@ -383,6 +396,7 @@ img {
     line-height: 1.11;
     color: #2e2f42;
   }
+
   /* 
   .menu-item:first-child {
     color: #404bbf;
@@ -450,9 +464,6 @@ img {
     height: 24px;
     fill: #f4f4fd;
   }
-
-  .icons-socials-menu {
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -460,7 +471,7 @@ img {
     display: none;
   }
 
-  .overlay-menu-container {
+  .mobile-menu-container {
     display: none;
   }
 }
@@ -479,13 +490,19 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("/images/bg-img.jpg");
+    url("./images/bg-img.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   width: 100%;
   margin: 0 auto;
   text-align: center;
+}
+
+@media (min-resolution: 192dpi) {
+  .section-one {
+    background-image: url("./images/bg-img@2x.jpg");
+  }
 }
 
 @media screen and (min-width: 768px) {
