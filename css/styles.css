@@ -300,10 +300,6 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  /* .burger-btn {
-    transform: translateX(0%);
-  } */
-
   .burger-btn {
     background-color: transparent;
     border: none;
@@ -311,9 +307,9 @@ img {
     line-height: 0;
     display: flex;
 
-    position: relative;
+    /* position: relative;
     overflow: hidden;
-    transform: translateX(0%);
+    transform: translateX(0%); */
   }
 
   .burger-icon {
@@ -464,7 +460,7 @@ img {
     display: none;
   }
 
-  .overlay-menu {
+  .overlay-menu-container {
     display: none;
   }
 }
