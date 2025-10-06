@@ -93,14 +93,17 @@ img {
 }
 
 .container {
-  width: 100%;
-  max-width: 288px;
+  max-width: 320px;
+  padding-left: 28px;
+  padding-right: 28px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 735px;
+    max-width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -132,7 +135,6 @@ img {
 
 .header-container {
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   flex-direction: row;
 }
@@ -261,11 +263,6 @@ img {
   display: none;
 }
 
-/* .contacts {
-  color: #434455;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
 @media screen and (min-width: 768px) {
   .contacts-ul {
     display: flex;
@@ -313,10 +310,6 @@ img {
     line-height: 0;
     display: flex;
     justify-content: space-between;
-
-    /* position: relative;
-    overflow: hidden;
-    transform: translateX(0%); */
   }
 
   .burger-icon {
@@ -337,17 +330,13 @@ img {
     overflow: hidden;
   }
 
-  /* .overlay-menu-container.is-open {
-    transform: translateX(0%);
-    position: relative;
-  } */
-
   .overlay-menu-container.is-open {
     transform: translateX(0%);
   }
 
   .mobile-menu-container {
     height: 100%;
+    padding: 72px 16px 40px;
   }
 
   .mobile-menu-close-btn {
@@ -372,8 +361,6 @@ img {
 
   .mobile-menu-nav {
     margin-bottom: 168px;
-    margin-top: 72px;
-    margin-left: 16px;
   }
 
   .mobile-menu-nav {
@@ -397,13 +384,7 @@ img {
     color: #2e2f42;
   }
 
-  /* 
-  .menu-item:first-child {
-    color: #404bbf;
-  } */
-
   .menu-contacts-container {
-    margin-left: 16px;
     margin-bottom: 48px;
   }
 
@@ -415,6 +396,9 @@ img {
 
   .menu-contacts {
     color: #434455;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -429,13 +413,11 @@ img {
     flex-direction: row;
     gap: 40px;
     width: 100%;
-    margin-bottom: 40px;
   }
 
   .ul-socials-menu {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: row;
     height: 40px;
     gap: 40px;
@@ -478,10 +460,6 @@ img {
 /* ================= /header ================= */
 
 /* ============= hero section ============= */
-
-/* .section-one {
-    padding-bottom: 120px;
-} */
 
 .section-one {
   padding: 72px 0;
@@ -742,6 +720,7 @@ img {
 .list-team {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 72px;
 }
@@ -1421,7 +1400,6 @@ input::placeholder {
 .policy-link {
   text-decoration: underline;
   color: #4d5ae5;
-  /* padding-left: 24px; */
 }
 
 .policy-container {
