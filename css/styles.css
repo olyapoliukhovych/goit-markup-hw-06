@@ -1082,6 +1082,8 @@ input::placeholder {
   width: 165px;
   height: 40px;
   padding-right: 24px;
+  padding-top: 0;
+  padding-bottom: 0;
 
   display: flex;
   justify-content: center;
@@ -1399,7 +1401,13 @@ input::placeholder {
 .policy-link {
   text-decoration: underline;
   color: #4d5ae5;
-  padding-left: 24px;
+  /* padding-left: 24px; */
+}
+
+.policy-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .policy-own-checkbox {
@@ -1411,7 +1419,8 @@ input::placeholder {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   fill: transparent;
-  margin-right: 5px;
+  margin-right: 8px;
+  cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -1422,7 +1431,7 @@ input::placeholder {
   fill: inherit;
 }
 
-.modal-checkbox:checked + .policy-text .policy-own-checkbox {
+.modal-checkbox:checked + .policy-container .policy-own-checkbox {
   fill: #f4f4fd;
   background-color: #404bbf;
   border: none;
@@ -1435,11 +1444,6 @@ input::placeholder {
 
   .policy-link {
     padding-left: 0;
-  }
-
-  .policy-own-checkbox {
-    cursor: pointer;
-    margin-right: 8px;
   }
 
   .modal-checkbox:checked + .policy-text .policy-own-checkbox {
